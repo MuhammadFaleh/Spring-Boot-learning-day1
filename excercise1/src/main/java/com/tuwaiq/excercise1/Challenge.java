@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 @RestController
 public class Challenge {
-    private int[] numbers = {1,2,3,4,6,7,8,9};
+    private int[] numbers = {1,2,3,4,5,6,7,8,9};
     private ArrayList<Integer> numbersUser = new ArrayList<>();
 
     @GetMapping("GET/1")
@@ -54,6 +54,7 @@ public class Challenge {
         numbersUser.add(numbers[7]);
         return "8 was added";
     }
+    
     @GetMapping("GET/9")
     public String addNumber9(){
         numbersUser.add(numbers[8]);
@@ -105,7 +106,7 @@ public class Challenge {
     public ArrayList<Integer> display(){
         return numbersUser;
     }
-    
+
     @GetMapping("GET/clear")
     public String clearAll(){
         numbersUser = new ArrayList<>();
