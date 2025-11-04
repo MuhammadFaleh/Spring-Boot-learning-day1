@@ -100,6 +100,11 @@ public class Challenge {
             return String.format("the result of the div is %d", num);
         }else return "enter numbers";
     }
+
+    @GetMapping("GET/display")
+    public ArrayList<Integer> display(){
+        return numbersUser;
+    }
     
     @GetMapping("GET/clear")
     public String clearAll(){
