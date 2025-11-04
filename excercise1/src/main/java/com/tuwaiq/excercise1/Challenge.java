@@ -54,7 +54,7 @@ public class Challenge {
         numbersUser.add(numbers[7]);
         return "8 was added";
     }
-    
+
     @GetMapping("GET/9")
     public String addNumber9(){
         numbersUser.add(numbers[8]);
